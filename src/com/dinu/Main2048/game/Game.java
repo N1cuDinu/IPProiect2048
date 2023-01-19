@@ -1,5 +1,7 @@
 package com.dinu.Main2048.game;
 
+import java.awt.*;
+
 public class Game {
     public Game(){
         init();
@@ -11,6 +13,9 @@ public class Game {
 
     }
     public void render(){
+
+    }
+    public void renderText(Graphics2D g){
 
     }
 }

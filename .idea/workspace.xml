@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="009cbf32-8327-4813-9f93-57d5c4fe8fb4" name="Changes" comment="First Commit">
-      <change afterPath="$PROJECT_DIR$/src/com/dinu/Main2048/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dinu/Main2048/game/Game.java" afterDir="false" />
+    <list default="true" id="009cbf32-8327-4813-9f93-57d5c4fe8fb4" name="Changes" comment="Creating the Main class, Game class, adding the first 2 packages.">
+      <change afterPath="$PROJECT_DIR$/src/com/dinu/Main2048/inputPackage/Keyboard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dinu/Main2048/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dinu/Main2048/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dinu/Main2048/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dinu/Main2048/game/Game.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +37,26 @@
     "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dinu.Main2048.Main" />
+      <module name="IPProiect2048" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dinu.Main2048.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -53,11 +73,19 @@
       <option name="project" value="LOCAL" />
       <updated>1674120087168</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Creating the Main class, Game class, adding the first 2 packages.">
+      <created>1674120676572</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1674120676572</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First Commit" />
+    <MESSAGE value="Creating the Main class, Game class, adding the first 2 packages." />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating the Main class, Game class, adding the first 2 packages." />
   </component>
 </project>
