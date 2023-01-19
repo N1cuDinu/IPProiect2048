@@ -1,6 +1,7 @@
 package com.dinu.Main2048;
 
 import com.dinu.Main2048.game.Game;
+import com.dinu.Main2048.inputPackage.Keyboard;
 
 import javax.swing.*;
 import java.awt.*;
@@ -9,18 +10,24 @@ import java.awt.image.BufferedImage;
 import java.awt.image.DataBufferInt;
 
 public class Main extends Canvas implements Runnable {
+
     public static final int WIDTH = 400, HEIGHT = 400;
     public static final float scale = 2.0f;
+    public Keyboard key;
     public JFrame frame;
     public Thread thread;
     public Game game;
     public boolean running = false;
     public static final BufferedImage image = new BufferedImage(WIDTH,HEIGHT,BufferedImage.TYPE_INT_RGB);
     public static int[] pixels = ((DataBufferInt) image.getRaster().getDataBuffer()).getData();
+
     public Main(){
         setPreferredSize(new Dimension((int) (WIDTH*scale), (int) (HEIGHT*scale)));
         frame = new JFrame();
-        game = new Game();
+        //Implementare Singleton ->
+        game = Game.getInstance();
+        key = new Keyboard();
+        addKeyListener(key);
     }
     public void start(){
         running = true;
@@ -50,6 +57,12 @@ public class Main extends Canvas implements Runnable {
                 updates++;
                 updateToPerform--;
             }
+            if(System.currentTimeMillis() - timer > 1000) {
+                frame.setTitle("2048 " + updates + " updates, " + frames + " frames");
+                updates = 0;
+                frames = 0;
+                timer += 1000;
+            }
             nanoTime = currentTimeInNanoSeconds;
             render();
             frames++;
@@ -57,6 +70,7 @@ public class Main extends Canvas implements Runnable {
     }
     public void update(){
         game.update();
+        key.update();
     }
     public void render(){
         BufferStrategy bs = getBufferStrategy();
@@ -70,8 +84,13 @@ public class Main extends Canvas implements Runnable {
         g.dispose();
         bs.show();
     }
+
+
+
+
     public static void main(String[] args) {
-        Main m= new Main();
+
+        Main m = new Main();
         m.frame.setResizable(false);
         m.frame.setTitle("2048");
         m.frame.add(m);
