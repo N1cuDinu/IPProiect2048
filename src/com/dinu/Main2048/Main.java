@@ -58,7 +58,6 @@ public class Main extends Canvas implements Runnable {
                 updateToPerform--;
             }
             if(System.currentTimeMillis() - timer > 1000) {
-                frame.setTitle("2048 " + updates + " updates, " + frames + " frames");
                 updates = 0;
                 frames = 0;
                 timer += 1000;
@@ -78,6 +77,7 @@ public class Main extends Canvas implements Runnable {
             createBufferStrategy(3);
             return;
         }
+        game.render();
         Graphics2D g = (Graphics2D) bs.getDrawGraphics();
         g.drawImage(image, 0 ,0, (int) (WIDTH * scale) , (int) (HEIGHT*scale), null);
         game.renderText(g);
@@ -92,7 +92,7 @@ public class Main extends Canvas implements Runnable {
 
         Main m = new Main();
         m.frame.setResizable(false);
-        m.frame.setTitle("2048");
+        m.frame.setTitle("2048 made by Nicu");
         m.frame.add(m);
         m.frame.pack();
         m.frame.setVisible(true);

@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="009cbf32-8327-4813-9f93-57d5c4fe8fb4" name="Changes" comment="Main Class constructors and methods -&gt; done&#10;Creating the Keyboard class enabling the use of key listeners for our app.">
-      <change afterPath="$PROJECT_DIR$/src/com/dinu/Main2048/GameObject/GameObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dinu/Main2048/Sprite/Renderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dinu/Main2048/Sprite/Sprite.java" afterDir="false" />
+    <list default="true" id="009cbf32-8327-4813-9f93-57d5c4fe8fb4" name="Changes" comment="Renderer and Sprite created &#10;Implementation of the first design pattern -&gt; Singleton, in the Game class.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dinu/Main2048/GameObject/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dinu/Main2048/GameObject/GameObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/dinu/Main2048/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dinu/Main2048/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/dinu/Main2048/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dinu/Main2048/game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dinu/Main2048/inputPackage/Keyboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dinu/Main2048/inputPackage/Keyboard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,13 +87,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674123532376</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Renderer and Sprite created &#10;Implementation of the first design pattern -&gt; Singleton, in the Game class.">
+      <created>1674128699003</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1674128699003</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Commit" />
     <MESSAGE value="Creating the Main class, Game class, adding the first 2 packages." />
     <MESSAGE value="Main Class constructors and methods -&gt; done&#10;Creating the Keyboard class enabling the use of key listeners for our app." />
-    <option name="LAST_COMMIT_MESSAGE" value="Main Class constructors and methods -&gt; done&#10;Creating the Keyboard class enabling the use of key listeners for our app." />
+    <MESSAGE value="Renderer and Sprite created &#10;Implementation of the first design pattern -&gt; Singleton, in the Game class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Renderer and Sprite created &#10;Implementation of the first design pattern -&gt; Singleton, in the Game class." />
   </component>
 </project>
