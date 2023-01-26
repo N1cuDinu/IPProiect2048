@@ -1,5 +1,6 @@
 package com.dinu.Main2048;
 
+import com.dinu.Main2048.Command.ExitCommand;
 import com.dinu.Main2048.MusicPlayerAdapter.MusicPlayer;
 import com.dinu.Main2048.game.Game;
 import com.dinu.Main2048.inputPackage.Keyboard;
@@ -39,6 +40,7 @@ public class Main extends Canvas implements Runnable {
     public void stop(){
         try {
             thread.join();
+            musicPlayer.stop();
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -91,7 +93,6 @@ public class Main extends Canvas implements Runnable {
         g.dispose();
         bs.show();
     }
-
 
 
     //TODO: add Memento, Iterator

@@ -7,7 +7,7 @@ import java.io.File;
 
 public class MusicPlayer {
     public Clip clip;
-    private String musicPath;
+    private final String musicPath;
 
     public MusicPlayer(String musicPath) {
         this.musicPath = musicPath;

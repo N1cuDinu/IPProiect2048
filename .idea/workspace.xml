@@ -4,21 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="009cbf32-8327-4813-9f93-57d5c4fe8fb4" name="Changes" comment="A somewhat final version of the game is done, next to implement the other 4 design patterns remaining.">
-      <change afterPath="$PROJECT_DIR$/src/com/dinu/Main2048/Command/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dinu/Main2048/Command/ExitCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dinu/Main2048/Command/LastCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dinu/Main2048/Iterator/Iterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dinu/Main2048/Memento/Memento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dinu/Main2048/Memento/MementoHistory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dinu/Main2048/MusicPlayerAdapter/MusicPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dinu/Main2048/MusicPlayerAdapter/MusicPlayerAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dinu/Main2048/MusicPlayerAdapter/MusicPlayerInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dinu/Main2048/Sounds/background.wav" afterDir="false" />
+    <list default="true" id="009cbf32-8327-4813-9f93-57d5c4fe8fb4" name="Changes" comment="Implementation of these design patterns:&#10;Adapter: used for background music&#10;Command: used for quitting the game and reinstating the previous state of the game&#10;Memento: used for reinstating the previous state of the game&#10;Iterator: used for getting the game states for memento.">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dinu/Main2048/tests/MusicPlayerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dinu/Main2048/GameObject/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dinu/Main2048/GameObject/GameObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IPProiect2048.iml" beforeDir="false" afterPath="$PROJECT_DIR$/IPProiect2048.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/dinu/Main2048/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dinu/Main2048/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dinu/Main2048/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dinu/Main2048/game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dinu/Main2048/MusicPlayerAdapter/MusicPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dinu/Main2048/MusicPlayerAdapter/MusicPlayer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +22,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -45,19 +38,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Java Workspace/IPProiect2048/src/com/dinu/Main2048/Sounds&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "last_opened_file_path": "D:/Java Workspace/IPProiect2048/src/com/dinu/Main2048/Sounds"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Java Workspace\IPProiect2048\src\com\dinu\Main2048\Sounds" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.dinu.Main2048.Command" />
+      <recent name="com.dinu.Main2048.MusicPlayerAdapter" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.LastCommandTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.dinu.Main2048.Main" />
       <module name="IPProiect2048" />
@@ -71,8 +79,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LastCommandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IPProiect2048" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dinu.Main2048.Command.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dinu.Main2048.Command" />
+      <option name="MAIN_CLASS_NAME" value="com.dinu.Main2048.Command.LastCommandTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MusicPlayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IPProiect2048" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dinu.Main2048.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dinu.Main2048.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.dinu.Main2048.tests.MusicPlayerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LastCommandTest" />
+        <item itemvalue="JUnit.MusicPlayerTest" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -121,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674138000562</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Implementation of these design patterns:&#10;Adapter: used for background music&#10;Command: used for quitting the game and reinstating the previous state of the game&#10;Memento: used for reinstating the previous state of the game&#10;Iterator: used for getting the game states for memento.">
+      <created>1674738660694</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1674738660694</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -130,6 +177,7 @@
     <MESSAGE value="Main Class constructors and methods -&gt; done&#10;Creating the Keyboard class enabling the use of key listeners for our app." />
     <MESSAGE value="Renderer and Sprite created &#10;Implementation of the first design pattern -&gt; Singleton, in the Game class." />
     <MESSAGE value="A somewhat final version of the game is done, next to implement the other 4 design patterns remaining." />
-    <option name="LAST_COMMIT_MESSAGE" value="A somewhat final version of the game is done, next to implement the other 4 design patterns remaining." />
+    <MESSAGE value="Implementation of these design patterns:&#10;Adapter: used for background music&#10;Command: used for quitting the game and reinstating the previous state of the game&#10;Memento: used for reinstating the previous state of the game&#10;Iterator: used for getting the game states for memento." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementation of these design patterns:&#10;Adapter: used for background music&#10;Command: used for quitting the game and reinstating the previous state of the game&#10;Memento: used for reinstating the previous state of the game&#10;Iterator: used for getting the game states for memento." />
   </component>
 </project>
