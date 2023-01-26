@@ -23,6 +23,25 @@ public class GameObject {
         this.width = sprite.width;
         this.height = sprite.height;
     }
+    public GameObject(GameObject gObject) {
+        this.x = gObject.x;
+        this.y = gObject.y;
+        this.width = gObject.width;
+        this.height = gObject.height;
+        this.sprite = gObject.sprite;
+        this.value = gObject.value;
+        this.speed = gObject.speed;
+        this.moving = gObject.moving;
+        this.remove = gObject.remove;
+        this.hasMoved = gObject.hasMoved;
+    }
+
+    public GameObject clone() {
+        return new GameObject(this);
+    }
+    public static GameObject newInstance(GameObject gObject) {
+        return new GameObject(gObject);
+    }
 
     public void createSprite() {
         switch (this.value) {
@@ -106,4 +125,5 @@ public class GameObject {
     public void render(){
         Renderer.renderSprite(sprite, (int) x, (int) y);
     }
+
 }

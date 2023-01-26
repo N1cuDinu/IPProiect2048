@@ -1,5 +1,6 @@
 package com.dinu.Main2048;
 
+import com.dinu.Main2048.MusicPlayerAdapter.MusicPlayer;
 import com.dinu.Main2048.game.Game;
 import com.dinu.Main2048.inputPackage.Keyboard;
 
@@ -20,6 +21,7 @@ public class Main extends Canvas implements Runnable {
     public boolean running = false;
     public static final BufferedImage image = new BufferedImage(WIDTH,HEIGHT,BufferedImage.TYPE_INT_RGB);
     public static int[] pixels = ((DataBufferInt) image.getRaster().getDataBuffer()).getData();
+    MusicPlayer musicPlayer =new MusicPlayer("D:\\Java Workspace\\IPProiect2048\\src\\com\\dinu\\Main2048\\Sounds\\background.wav");
 
     public Main(){
         setPreferredSize(new Dimension((int) (WIDTH*scale), (int) (HEIGHT*scale)));
@@ -49,6 +51,8 @@ public class Main extends Canvas implements Runnable {
         int frames = 0;
         int updates = 0;
         requestFocus();
+
+        musicPlayer.play();
         while(running) {
             long currentTimeInNanoSeconds = System.nanoTime();
             updateToPerform += (currentTimeInNanoSeconds - nanoTime) /nanoSecondsPerUpdate;
@@ -65,7 +69,10 @@ public class Main extends Canvas implements Runnable {
             nanoTime = currentTimeInNanoSeconds;
             render();
             frames++;
+            musicPlayer.repeat();
+
         }
+
     }
     public void update(){
         game.update();
@@ -87,7 +94,7 @@ public class Main extends Canvas implements Runnable {
 
 
 
-
+    //TODO: add Memento, Iterator
     public static void main(String[] args) {
 
         Main m = new Main();

@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="009cbf32-8327-4813-9f93-57d5c4fe8fb4" name="Changes" comment="Renderer and Sprite created &#10;Implementation of the first design pattern -&gt; Singleton, in the Game class.">
+    <list default="true" id="009cbf32-8327-4813-9f93-57d5c4fe8fb4" name="Changes" comment="A somewhat final version of the game is done, next to implement the other 4 design patterns remaining.">
+      <change afterPath="$PROJECT_DIR$/src/com/dinu/Main2048/Command/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dinu/Main2048/Command/ExitCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dinu/Main2048/Command/LastCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dinu/Main2048/Iterator/Iterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dinu/Main2048/Memento/Memento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dinu/Main2048/Memento/MementoHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dinu/Main2048/MusicPlayerAdapter/MusicPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dinu/Main2048/MusicPlayerAdapter/MusicPlayerAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dinu/Main2048/MusicPlayerAdapter/MusicPlayerInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dinu/Main2048/Sounds/background.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/dinu/Main2048/GameObject/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dinu/Main2048/GameObject/GameObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/dinu/Main2048/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dinu/Main2048/Main.java" afterDir="false" />
@@ -15,6 +28,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -31,12 +45,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Java Workspace/IPProiect2048/src/com/dinu/Main2048/Sounds&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Java Workspace\IPProiect2048\src\com\dinu\Main2048\Sounds" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.dinu.Main2048.Main" />
@@ -94,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674128699003</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="A somewhat final version of the game is done, next to implement the other 4 design patterns remaining.">
+      <created>1674138000562</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1674138000562</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -102,6 +129,7 @@
     <MESSAGE value="Creating the Main class, Game class, adding the first 2 packages." />
     <MESSAGE value="Main Class constructors and methods -&gt; done&#10;Creating the Keyboard class enabling the use of key listeners for our app." />
     <MESSAGE value="Renderer and Sprite created &#10;Implementation of the first design pattern -&gt; Singleton, in the Game class." />
-    <option name="LAST_COMMIT_MESSAGE" value="Renderer and Sprite created &#10;Implementation of the first design pattern -&gt; Singleton, in the Game class." />
+    <MESSAGE value="A somewhat final version of the game is done, next to implement the other 4 design patterns remaining." />
+    <option name="LAST_COMMIT_MESSAGE" value="A somewhat final version of the game is done, next to implement the other 4 design patterns remaining." />
   </component>
 </project>
